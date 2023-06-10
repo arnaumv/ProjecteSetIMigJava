@@ -16,9 +16,8 @@ create table player_game (
     id_jugador varchar(25),
 	initial_card_id char(3) not null,
     starting_points tinyint,
-    ending_points tinyint,
-    foreign key (cardgame_id ) references cardgame(cardgame_id),
-	foreign key (id_jugador) references jugadores(id_jugador) );
+    ending_points tinyint);
+
 
 create table cardgame (
 	cardgame_id int primary key,
@@ -26,8 +25,9 @@ create table cardgame (
     rounds tinyint not null,
     start_hour datetime not null,
     end_hour datetime not null,
-    deck_id char(3),
-    foreign key (deck_id) references deck(deck_id));
+    deck_id char(3));
+    
+ 
 
 create table player_game_round (
 	cardgame_id int,
@@ -37,9 +37,9 @@ create table player_game_round (
     bet_points tinyint,
     cards_value decimal(4,1),
     starting_round_points tinyint,
-    ending_round_points tinyint,
-    foreign key (cardgame_id) references cardgame(cardgame_id),
-    foreign key (player_id) references jugadores(id_jugador));
+    ending_round_points tinyint);
+    
+
 
 create table deck (
 	deck_id char(3) primary key,
@@ -51,6 +51,26 @@ CREATE TABLE card (
   card_priority tinyint DEFAULT NULL,
   card_real_value float(2,1) DEFAULT NULL,
   deck_id char(3) DEFAULT NULL,
-  card_name varchar(25) DEFAULT NULL,
-    foreign key (deck_id) references deck(deck_id));
+  card_name varchar(25) DEFAULT NULL);
+  
+   
     
+    
+    
+      alter table player_game
+    add foreign key (cardgame_id ) references cardgame(cardgame_id),
+	add foreign key (id_jugador) references jugadores(id_jugador) ;
+    
+    
+       alter table cardgame
+   add foreign key (deck_id) references deck(deck_id);
+   
+   
+       alter table player_game_round
+    add foreign key (cardgame_id) references cardgame(cardgame_id),
+    add foreign key (player_id) references jugadores(id_jugador);
+    
+    
+    
+      alter table card
+    add foreign key (deck_id) references deck(deck_id);
