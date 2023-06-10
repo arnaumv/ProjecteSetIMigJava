@@ -45,12 +45,12 @@ create table deck (
 	deck_id char(3) primary key,
     deck_name varchar(25));
 
-create table card (
-	card_id char(3),
-    card_name varchar(25),
-    card_value decimal(3,1),
-    card_priority tinyint,
-    card_real_value tinyint,
-    deck_id char(3),
+CREATE TABLE card (
+  card_id char(3) NOT NULL,
+  card_value float(3,1) DEFAULT NULL,
+  card_priority tinyint DEFAULT NULL,
+  card_real_value float(2,1) DEFAULT NULL,
+  deck_id char(3) DEFAULT NULL,
+  card_name varchar(25) DEFAULT NULL),
     foreign key (deck_id) references deck(deck_id));
     
