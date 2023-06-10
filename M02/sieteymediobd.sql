@@ -51,6 +51,6 @@ CREATE TABLE card (
   card_priority tinyint DEFAULT NULL,
   card_real_value float(2,1) DEFAULT NULL,
   deck_id char(3) DEFAULT NULL,
-  card_name varchar(25) DEFAULT NULL),
+  card_name varchar(25) DEFAULT NULL;
     foreign key (deck_id) references deck(deck_id));
     
