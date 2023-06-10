@@ -39,7 +39,7 @@ create table player_game_round (
     starting_round_points tinyint,
     ending_round_points tinyint,
     foreign key (cardgame_id) references cardgame(cardgame_id),
-    foreign key (id_jugador) references jugadores(id_jugador));
+    foreign key (player_id) references jugadores(id_jugador));
 
 create table deck (
 	deck_id char(3) primary key,
@@ -51,6 +51,6 @@ CREATE TABLE card (
   card_priority tinyint DEFAULT NULL,
   card_real_value float(2,1) DEFAULT NULL,
   deck_id char(3) DEFAULT NULL,
-  card_name varchar(25) DEFAULT NULL;
+  card_name varchar(25) DEFAULT NULL,
     foreign key (deck_id) references deck(deck_id));
     
