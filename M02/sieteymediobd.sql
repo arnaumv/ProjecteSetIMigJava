@@ -11,7 +11,7 @@ CREATE TABLE players (
 );
 
 create table deck (
-	id char(3) primary key,
+	id varchar(3) primary key,
     deck_name varchar(25)
 );
 
@@ -21,7 +21,7 @@ create table cardgame (
     rounds tinyint not null,
     start_hour datetime not null,
     end_hour datetime not null,
-    deck_id char(3),
+    deck_id varchar(3),
     foreign key (deck_id) references deck(id)
 );
 
@@ -50,11 +50,11 @@ create table player_game_round (
 );
 
 CREATE TABLE card (
-  id char(3) NOT NULL,
+  id varchar(3) NOT NULL,
   card_value float(3,1) DEFAULT NULL,
   card_real_value float(2,1) DEFAULT NULL,
   card_name varchar(25) DEFAULT NULL,
-  deck_id char(3) NOT NULL,
+  deck_id varchar(3) NOT NULL,
   foreign key (deck_id) references deck(id)
 );
     
