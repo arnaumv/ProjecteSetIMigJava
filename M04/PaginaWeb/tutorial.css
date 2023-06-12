@@ -1,0 +1,221 @@
+.menu {
+  background-color: #333; /* Establece el color de fondo del menú */
+  display: flex;
+  justify-content: center;
+}
+
+.menu nav {
+  display: flex; /* Hace que los elementos dentro de <nav> se alineen horizontalmente */
+}
+
+.menu nav ul {
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0; /* Elimina los márgenes de las listas */
+  padding: 0; /* Elimina los rellenos de las listas */
+}
+
+.menu nav ul li {
+  float: left; /* Hace que los elementos de la lista se alineen horizontalmente */
+}
+
+.menu nav ul li a {
+  color: white; /* Establece el color de texto de los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  padding: 14px 16px; /* Establece el relleno de los enlaces */
+  display: block; /* Hace que los enlaces ocupen todo el ancho de su contenedor */
+}
+
+.menu nav ul li a:hover {
+  background-color: #444; /* Establece el color de fondo de los enlaces al hacer hover */
+}
+/*  */
+.container-titulo img {
+  transition: 0.5s ease-in-out;
+}
+
+body {
+  
+  background-color: aqua;
+}
+ol {
+  text-align: center;
+}
+.container-titulo img:hover {
+  opacity: 0.5;
+}
+.divheader {
+  display: flex; /* Muestra los elementos dentro de la caja como una fila */
+  flex-wrap: wrap;
+  align-items: center; /* Alinea los elementos en el centro verticalmente */
+  justify-content:center; /* Distribuye los elementos en la caja utilizando espacio entre ellos */
+  padding: 5px; /* Agrega un relleno a la caja */
+  background-color: #f5f5f5; /* Agrega un fondo de color gris claro */
+}
+
+.logo {
+  margin-right: -20px; /* Agrega un margen a la derecha del logo */
+}
+
+.container-titulo {
+  text-align: center; /* Centra el texto */
+  align-self: center;
+  margin-bottom: 20px; /* Agrega un margen debajo del contenedor */
+}
+
+.container-titulo h1 {
+  font-size: 3em; /* Aumenta el tamaño de la fuente del título */
+  font-weight: bold; /* Hace el título más pesado */
+  margin-bottom: 10px; /* Agrega un margen debajo del título */
+}
+
+.container-titulo p {
+  font-size: 1.2em; /* Aumenta el tamaño de la fuente del párrafo */
+  line-height: 1.5; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+  margin-bottom: 20px; /* Agrega un margen debajo del párrafo */
+}
+
+.container-titulo img {
+  width: 150px; /* Establece el ancho de las imágenes */
+  height: 150px; /* Establece la altura de las imágenes */
+  margin-right: 20px; /* Agrega un margen a la derecha de las imágenes */
+  border-radius: 50%; /* Hace que las imágenes tengan bordes redondeados */
+}
+
+
+/*  */
+.container-introduccion {
+  background-color: #f4f4f4; /* agregue un fondo de color al contenido */
+  font-family: 'Open Sans', sans-serif; /* Especifica una fuente moderna y legible */
+  max-width: 70em; /* Limita el ancho del contenido para evitar que sea demasiado ancho en pantallas grandes */
+  /* max-height: 50em; */
+  font-size: small;
+  margin: 50px auto; /* Centra el contenido en la página y agrega un margen */
+  text-align: justify; /* Alinea el texto justificado */
+  border-radius: 15px;
+  
+
+}
+
+
+#introduccion h2.titulo {
+  font-size: 2em; /* Aumenta el tamaño de la fuente del título */
+  font-weight: bold; /* Hace el título más pesado */
+  margin-bottom: 25px; /* Agrega un margen debajo del título */
+  text-align: center; /* Centra el título */
+  padding-top: 15px;
+}
+
+#introduccion p {
+  font-size: 1.2em; /* Aumenta el tamaño de la fuente del párrafo */
+  line-height: 1.5; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+  margin-bottom: 40px; /* Agrega un margen debajo del párrafo */
+  padding: 15px;
+  padding-top: 0px;
+}
+
+/*  */
+
+.divheader .logo {
+  padding-top: 10px;
+  float:left;
+}
+
+
+.container-titulo {
+  padding-top: 25px;
+  padding-left: 70px;
+}
+
+.container-titulo h1 {
+  font-size: 2em;
+
+}
+
+
+
+/*  */
+
+.resumen {
+  font-family: Arial, sans-serif; /* especifique una fuente para el contenido */
+  font-size: 1.3em;
+  margin: 20px; /* agregue un margen alrededor del contenido */
+  padding: 20px; /* agregue algo de espacio interior al contenido */
+  background-color: #f4f4f4; /* agregue un fondo de color al contenido */
+  border-radius: 10px; /* doble las esquinas para dar un aspecto más suave */
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+#titulo{
+  font-style: bold;
+  font-size: larger;
+  
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.resumen h2 { /* seleccione el encabezado h2 dentro del elemento resumen */
+  font-size: 24px; /* aumente el tamaño de la fuente */
+  margin-bottom: 20px; /* agregue un margen debajo del encabezado */
+  text-align: center; /* centra el texto */
+}
+
+.resumen li {
+  font-size: medium;
+}
+
+.resumen ul { /* seleccione todas las listas dentro del elemento resumen */
+  list-style:disc; /* quita los puntos en las listas */
+  margin-bottom: 10px; /* agrega un margen debajo de cada elemento li */
+  font-size: medium;
+}
+
+.resumen ul li { /* selecciona cada elemento li dentro de una lista */
+  margin-bottom: 10px; /* agrega un margen debajo de cada elemento li */
+  text-align: center;
+  line-height: 1.5; /* aumente el espacio entre líneas para mejorar la legibilidad */
+  font-size: medium;
+
+}
+
+
+
+
+/*  */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  padding: 20px 0;
+}
+
+.logo-footer {
+  height: 55px;
+  width: 55px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
